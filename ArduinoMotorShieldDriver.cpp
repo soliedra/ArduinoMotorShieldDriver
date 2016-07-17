@@ -22,14 +22,20 @@ void ArduinoMotorShieldDriver::writePWM(int pwmSpeed)
 	{
 		digitalWrite(_pin_dir_channelA, HIGH);
 		digitalWrite(_pin_dir_channelB, HIGH);
+		
+		// set PWM outputs
+		analogWrite(_pin_pwm_output_channelA, -pwmSpeed);
+		analogWrite(_pin_pwm_output_channelB, -pwmSpeed);
 	}
 	else
 	{
 		digitalWrite(_pin_dir_channelA, LOW);
 		digitalWrite(_pin_dir_channelB, LOW);
+		
+		// set PWM outputs
+		analogWrite(_pin_pwm_output_channelA, pwmSpeed);
+		analogWrite(_pin_pwm_output_channelB, pwmSpeed);
+		
 	}
 		
-	// set PWM outputs
-	analogWrite(_pin_pwm_output_channelA, pwmSpeed);
-	analogWrite(_pin_pwm_output_channelB, pwmSpeed);
 }	

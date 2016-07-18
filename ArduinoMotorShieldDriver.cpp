@@ -36,6 +36,5 @@ void ArduinoMotorShieldDriver::writePWM(int pwmSpeed)
 		analogWrite(_pin_pwm_output_channelA, pwmSpeed);
 		analogWrite(_pin_pwm_output_channelB, pwmSpeed);
 		
-	}
-		
+	}		
 }	

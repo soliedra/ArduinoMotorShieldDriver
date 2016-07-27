@@ -9,7 +9,7 @@
  to deliver a maximum current of 4 Amps to the driven motor.
  </p>
  <p>
-  I've cut off the male end of the pins pins D0,D1,D2 and D3 so they are disconnected 
+  NOTICE!!. This is not the standard shield, I've cut off the male end of the pins pins D0,D1,D2 and D3 so they are disconnected 
   from the Arduino board underneath, with a short cable I've bridged the pins D3 and D5 on the top 
   side of the Arduino motor shield. The reason to do this is to leave the Arduino pins D2 and D3 
   free to connect the encoder feedback. Pins D2 and D3 are the external interrupt enabled pins</p>
